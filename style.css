@@ -180,3 +180,30 @@
     width: 60px;
     height: 20px;
 }
+
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: spin-top-12 .5s ease-in-out forwards;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: spin-bot-12 .5s ease-in-out forwards;
+}
+
+@keyframes spin-top-12 {
+    0% {
+      left: 10%;
+    }
+    100% {
+      left: 60%;
+    }
+}
+
+@keyframes spin-bot-12 {
+    0% {
+      right: 20%;
+    }
+    100% {
+      right: 60%;
+    }
+}
