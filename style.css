@@ -112,10 +112,36 @@
 /* esercizio 10 */
 .ex-10-icon {
     font-size: 60px;
+    animation: spin 2s linear infinite;
 }
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+
+/* esercizio 11 */
 .ex-11-icon {
     font-size: 60px;
+    animation: spin 2s linear cubic-bezier(.3,.17,1,.03) alternate;
 }
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(270deg);
+    }
+}
+
+
+/* esercizio 12 - 13 */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
