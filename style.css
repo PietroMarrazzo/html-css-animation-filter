@@ -17,10 +17,9 @@
     height: 100px;
     background: red;
     transition: width 5s;
-    cursor: pointer;
 }
 
-.ex-2-square:cursor(pointer){
+.ex-2-square:active{
     width:1000px;
 }
 
