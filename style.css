@@ -112,10 +112,10 @@
 /* esercizio 10 */
 .ex-10-icon {
     font-size: 60px;
-    animation: spin 2s linear infinite;
+    animation: spin-10 2s linear infinite;
 }
 
-@keyframes spin {
+@keyframes spin-10 {
     from {
       transform: rotate(0deg);
     }
@@ -128,15 +128,24 @@
 /* esercizio 11 */
 .ex-11-icon {
     font-size: 60px;
-    animation: spin 2s linear cubic-bezier(.3,.17,1,.03) alternate;
 }
 
-@keyframes spin {
-    from {
+.ex-11-icon:hover {
+    animation: spin-11 2s linear infinite;
+}
+
+ @keyframes spin-11 {
+    0% {
       transform: rotate(0deg);
     }
-    to {
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
       transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(0deg);
     }
 }
 
